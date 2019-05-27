@@ -1,0 +1,18 @@
+﻿Build started 11/3/2016 8:09:34 AM.
+     1>Project "C:\Users\MohammadA\Dropbox\UMKC\Courses\303 Data Structures\Source Code\Code\OpenMP_simple\OpenMP_simple\OpenMP_simple.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /Qpar /fp:precise /Zc:wchar_t /Zc:forScope /openmp /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>c:\users\mohammada\dropbox\umkc\courses\303 data structures\source code\code\openmp_simple\openmp_simple\binary_search_tree.h(6): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+     1>c:\users\mohammada\dropbox\umkc\courses\303 data structures\source code\code\openmp_simple\openmp_simple\source.cpp(94): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\mohammada\dropbox\umkc\courses\303 data structures\source code\code\openmp_simple\openmp_simple\source.cpp(217): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\mohammada\dropbox\umkc\courses\303 data structures\source code\code\openmp_simple\openmp_simple\source.cpp(238): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\mohammada\dropbox\umkc\courses\303 data structures\source code\code\openmp_simple\openmp_simple\source.cpp(254): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\MohammadA\Dropbox\UMKC\Courses\303 Data Structures\Source Code\Code\OpenMP_simple\Debug\OpenMP_simple.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\MohammadA\Dropbox\UMKC\Courses\303 Data Structures\Source Code\Code\OpenMP_simple\Debug\OpenMP_simple.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\MohammadA\Dropbox\UMKC\Courses\303 Data Structures\Source Code\Code\OpenMP_simple\Debug\OpenMP_simple.lib" /MACHINE:X86 Debug\Source.obj
+         OpenMP_simple.vcxproj -> C:\Users\MohammadA\Dropbox\UMKC\Courses\303 Data Structures\Source Code\Code\OpenMP_simple\Debug\OpenMP_simple.exe
+     1>Done Building Project "C:\Users\MohammadA\Dropbox\UMKC\Courses\303 Data Structures\Source Code\Code\OpenMP_simple\OpenMP_simple\OpenMP_simple.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:06.68
