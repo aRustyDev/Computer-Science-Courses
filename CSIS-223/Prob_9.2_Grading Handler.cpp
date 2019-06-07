@@ -1,13 +1,19 @@
-//Title: Force UPPERCASE | Problem 9.
-//Author: Adam C Smith | RedGrinGrumbler
-//Purpose: Read from Names and test scores from Input, return Highest test,
-//         and average test score i.e. Grades
-//Compiler: https://www.tutorialspoint.com/compile_cpp_online.php
-/*Notes:
-
+/*      Title: Force UPPERCASE | Problem 9.
+ *      Author: Adam C Smith | RedGrinGrumbler
+ *  
+ *              ::Compiler Info::
+ *      Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+ *      Target: x86_64-apple-darwin18.6.0
+ *      Thread model: posix
+ *
+ *      Purpose: Read from Names and test scores from Input, return Highest test,
+ *               and average test score i.e. Grades
+ *               
+ * */
+/*      Notes:
+ * 
+ *
 */
-
-
 
 #include <iostream>
 #include <string>
