@@ -1,17 +1,22 @@
 /*      Title: Force UPPERCASE | Problem 9.
  *      Author: Adam C Smith | RedGrinGrumbler
- *  
+ *
  *              ::Compiler Info::
- *      Apple LLVM version 10.0.1 (clang-1001.0.46.4)
- *      Target: x86_64-apple-darwin18.6.0
- *      Thread model: posix
+ *      CMD: cpp --version
+ *          Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+ *          Target: x86_64-apple-darwin18.6.0
+ *          Thread model: posix
+ *      CMD: gcc --version
+ *          Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+ *          Target: x86_64-apple-darwin18.6.0
+ *          Thread model: posix
  *
  *      Purpose: Read from Names and test scores from Input, return Highest test,
  *               and average test score i.e. Grades
- *               
+ *
  * */
 /*      Notes:
- * 
+ *
  *
 */
 
