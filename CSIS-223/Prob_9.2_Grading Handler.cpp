@@ -11,6 +11,8 @@
  *          Target: x86_64-apple-darwin18.6.0
  *          Thread model: posix
  *
+ *       GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/edit/master/CSIS-223/Prob_9.2_Grading%20Handler.cpp
+ *
  *      Purpose: Read from Names and test scores from Input, return Highest test,
  *               and average test score i.e. Grades
  *
@@ -27,6 +29,7 @@
 
 using namespace std;
 
+//Structures
 struct studentType
 {
     string FName;
@@ -37,7 +40,8 @@ struct studentType
     char letterGrade = 'A';
 };
 
-char getGrade(int percentGrade){
+//Functions
+char getGrade(int percentGrade){//Takes Avg Score Returns Letter Grade
     switch(percentGrade){
         case 90 ... 100 : return 'A';
         case 80 ... 89 : return 'B';
@@ -51,7 +55,6 @@ studentType getStudent(int totalTests) {
     studentType stud;
     double cumulatePts = 0;
     double highestTest = 0;
-    double testScore;
 
     //Input
     cout << endl;
@@ -61,7 +64,8 @@ studentType getStudent(int totalTests) {
     cin >> stud.LName;
     for (int i = 0; i < 5; i++) {
         cout << "Test " << i+1 << " Score: ";
-        if (cin >> stud.testHistory[i]) {
+        if (cin >> stud.testHistory[i]) {//Check if (Int)
+            //Check if (0 <= Int <= 100)
             if (stud.testHistory[i] <= 100 && stud.testHistory[i] >= 0){
                 continue;
             }else{
@@ -78,6 +82,7 @@ studentType getStudent(int totalTests) {
 
     //Processing
     for (int i = 0; i < totalTests; i++) {
+        //Get Avg Grade & Highest Score for that Student
         cumulatePts += stud.testHistory[i];
         if (stud.testHistory[i] > highestTest) {
             highestTest = stud.testHistory[i];
@@ -96,6 +101,9 @@ void getHighestScore(array<studentType,5> studRoster){
     double highestTest = 0;
 
     for(int i = 0; i < classSize; i++){
+        //Cycle through the group of student object.
+        //Compare each students highest score and return highest scoring student
+        //Does not take into account high ties.
         stud = studRoster[i];
         if(stud.highScore > highestTest){
             highestTest = stud.highScore;
@@ -108,17 +116,17 @@ void getHighestScore(array<studentType,5> studRoster){
 }
 void outputRoster(studentType stud){
     cout << endl;
-    cout << "Name: " << stud.FName << " " << stud.LName << endl;
-    cout << "Grade: " << stud.letterGrade << endl;
-    cout << "HighScore: " << stud.highScore << endl;
-    cout << "Avg Score: " << stud.avgScore << endl;
+    cout << left << "Name: " << stud.FName << ", " << stud.LName << endl;
+    cout << left << "Grade: " << stud.letterGrade << endl;
+    cout << left << "HighScore: " << stud.highScore << endl;
+    cout << left << "Avg Score: " << stud.avgScore << endl;
 }
 
 int main() {
     //Variables
-    array<studentType, 5> studRoster = {};
-    int i = 3;
+    int i = 20;
     int totalTests = 5;
+    array<studentType, 5> studRoster = {};
 
     //Input
     cout << "Class Size: " << i << endl;
