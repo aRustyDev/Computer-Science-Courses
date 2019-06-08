@@ -13,11 +13,22 @@
  *
  *       GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/edit/master/CSIS-223/Prob_9.2_Grading%20Handler.cpp
  *
- *      Purpose: Read from Names and test scores from Input, return Highest test,
+ *      Purpose: Read in Names and test scores from console, return FName, LName, Highest test, highest test receipient,
  *               and average test score i.e. Grades
  *
  * */
 /*      Notes:
+ *          The problem called for a variable named "testScore" of type int
+ *          This requirement is not has conclusive or flexible as my alternative solution.
+ *              - Alt Soln: Use a Arr[int] called "testHistory"
+ *              - Result: can add a list of tests to the student, it allows for finding
+ *                        a more realistic average and highscore.
+ *          There are two requirements in my code
+ *              1) because I used the Array library the input to the array object requires a constant size
+ *                  this means i cannot pass the number of test easily. However this issue is out weighed in
+ *                  my opinion by the ease of use of the function.
+ *              2) I decided against adding in the handling of a high score tie situation.
+ *                  This was mostly out of laziness, because the error could be handled. 
  *
  *
 */
@@ -58,23 +69,23 @@ studentType getStudent(int totalTests) {
 
     //Input
     cout << endl;
-    cout << "First Name: ";
+    cout << left << "First Name: ";
     cin >> stud.FName;
-    cout << "Last Name: ";
+    cout << left << "Last Name: ";
     cin >> stud.LName;
     for (int i = 0; i < 5; i++) {
-        cout << "Test " << i+1 << " Score: ";
+        cout << left << "Test " << i+1 << " Score: ";
         if (cin >> stud.testHistory[i]) {//Check if (Int)
             //Check if (0 <= Int <= 100)
             if (stud.testHistory[i] <= 100 && stud.testHistory[i] >= 0){
                 continue;
             }else{
                 i--;
-                cout << "Please enter a value between 0-100" << endl;
+                cout << left << "Please enter a value between 0-100" << endl;
             }
         } else {
             i--;
-            cout << "Please enter a value between 0-100" << endl;
+            cout << left << "Please enter a value between 0-100" << endl;
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
         }
@@ -110,9 +121,9 @@ void getHighestScore(array<studentType,5> studRoster){
             highestScorer = stud;
         }
     }
-    cout << endl << "Highest Scorer: "
-        << highestScorer.FName << " " << highestScorer.LName << endl;
-    cout << highestScorer.highScore << endl;
+    cout << left << endl << "Highest Scorer: "
+         << highestScorer.FName << " " << highestScorer.LName << endl;
+    cout << left << highestScorer.highScore << endl;
 }
 void outputRoster(studentType stud){
     cout << endl;
@@ -129,7 +140,7 @@ int main() {
     array<studentType, 5> studRoster = {};
 
     //Input
-    cout << "Class Size: " << i << endl;
+    cout << left << "Class Size: " << i << endl;
 
     //Function Calls
     for (int k = 0; k < i; k++) {
