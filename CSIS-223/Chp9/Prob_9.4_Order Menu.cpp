@@ -1,4 +1,4 @@
-/*      Title: Grading Handler | Problem 9.2
+/*      Title: Order from the Menu | Problem 9.4
  *      Author: Adam C Smith | RedGrinGrumbler
  *
  *              ::Compiler Info::
@@ -11,7 +11,7 @@
  *          Target: x86_64-apple-darwin18.6.0
  *          Thread model: posix
  *
- *       GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/edit/master/CSIS-223/Prob_9.2_Grading%20Handler.cpp
+ *       GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp9/Prob_9.4_Order%20Menu.cpp
  *
  *      Purpose:
  *
