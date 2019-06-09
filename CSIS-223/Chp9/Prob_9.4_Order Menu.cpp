@@ -16,7 +16,7 @@
  *      Purpose: Take the Users 'order' and return the final cost of the order.
  *
  * */
-/*      Notes:
+/*      Notes/To-Do's:
  *          Find way to add/remove menu items
  *          Write a putback function
  *          Check continue ordering Char for error, and provide correction.
