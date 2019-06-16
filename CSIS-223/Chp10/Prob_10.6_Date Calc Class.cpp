@@ -17,20 +17,6 @@
  *
  * */      //Specifications Block
 /*      Notes/To-Do's:
- *          * Functions for ...
- *              'Set Day'
- *              'Print Day'
- *              'Return Day'
- *              'Return Next Day'
- *              'Return Previous Day'
- *              'Add Days'
- *          * add appropriate constructors
- *          The use of Julian Dates makes for a simple calculator, however it assumes the year start on Monday.
- *          This may not always be true, this can easily be solved by implementing a initial offset for what ever
- *          day the year started on. I have not implemented this because I am not planning on taking this to any
- *          production level.
- *
- *          [Q]: Do I need multiple types of constructors besides Default and Full?
  *
  * */      //Notes / To-Do's Block
 
@@ -47,11 +33,7 @@ class dayType{
             dayType();
                 /*  Default Constructor.
                  *
-                 *  Sets the Default Value of dayName & julianDate
-                 *
-                 *  Default Values
-                 *      dayName = "Monday"
-                 *      julianDate = 1
+                 *  Creates dayType Object with Default Value of dayName & julianDate
                  *
                  *  Post-Condition:
                  *      dayName = "Monday"
@@ -61,10 +43,7 @@ class dayType{
             dayType(string);
                 /*  Parameterized Constructor. | DayName, JulianDate
                  *
-                 *  Sets the Default Value of dayName & julianDate
-                 *
-                 *  Default Values
-                 *      julianDate = 1 (Default)
+                 *  Creates dayType Object with & sets Value of dayName & julianDate
                  *
                  *  Post-Condition:
                  *      dayName = string
@@ -74,7 +53,7 @@ class dayType{
             dayType(string, int);
                 /*  Parameterized Constructor. | DayName, JulianDate
                  *
-                 *  Sets the Default Value of dayName & julianDate
+                 *  Creates dayType Object with & sets Value of dayName & julianDate
                  *
                  *  Post-Condition:
                  *      dayName = string
@@ -84,45 +63,66 @@ class dayType{
 
             //Accessor Functions - Definitions
             void printDay();
-                /*
-     *
-    */
-            dayType* getDay();
-                /*  Function to return the current dayType Objects dayName value.
+                /*  Function that will print this->dayName
                  *
                  *  Post-Condition:
+                 *      cout << Val of dayType: this->dayName
+                 *
+                */
+            dayType* getDay();
+                /*  Function to return a pointer to the current dayType Objects dayName value.
+                 *
+                 *  Post-Condition:
+                 *      return this;
                  *
                 */
             dayType getTomorrow();
-                /*
+                /*  Function that returns a new dayType object, incremented by 1 day from the input
                  *
                 */
             dayType getYesterday();
-                /*
+                /*  Function that returns a new dayType object, decremented by 1 day from the input
                  *
                 */
 
             //Mutator Functions - Definitions
             void setDay(string);
-                /*  Function to change the dayType Object
+                /*  Function to change the dayType Objects Day Name
                  *
                  *  Post-Condition:
-                 *      dayType Object
-                 *      * day value of STRING
-                 *      * julian value of INT
+                 *      this->dayName = day;
                  *
-                *///DONE
+                *///
             void setJulian(int);
+                /*  Function to set a dayType Objects Julian Val
+                 *
+                 *  Post-Condition:
+                 *      this->julianDate = julian;
+                 *
+                *///
             void addDays(int daysAdded);
                 /*  Function adds INT days to current julianDate Value
                  *
                  *  Post-Condition:
-                 *
+                 *       this->julianDate = this->julianDate + daysAdded;
+                 *       this->dayName = this->julianToString();
                  *
                 */
             //Processor Functions
             string julianToString();
+                /*  Function Syncronizes Day Name to the Julian Day Val
+                 *
+                 *  Post-Condition:
+                 *       this->dayName = String("correct weekday");
+                 *
+                */
             int dayToJulian();
+                /*  Function Syncronizes Julian Day to the Day Name Val
+                 *
+                 *  Post-Condition:
+                 *       this->julianDay = Int(Correct Number);
+                 *
+                */
 
             //variables
             int julianDate;
@@ -197,8 +197,6 @@ class dayType{
 
         day.julianDate = day.julianDate + 1;
         day.dayName = day.julianToString();
-        printf("\nToday:\n\t");
-        this->printDay();
         printf("Tomorrow:\n\t");
         day.printDay();
         return day;
@@ -210,8 +208,6 @@ class dayType{
 
         day.julianDate = day.julianDate - 1;
         day.dayName = day.julianToString();
-        printf("\nToday:\n\t");
-        this->printDay();
         printf("Yesterday:\n\t");
         day.printDay();
         return day;
