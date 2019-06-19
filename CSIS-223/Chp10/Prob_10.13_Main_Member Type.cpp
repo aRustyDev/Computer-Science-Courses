@@ -11,7 +11,7 @@
  *          Target: x86_64-apple-darwin18.6.0
  *          Thread model: posix
  *
- *      GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp10/Prob_10.13_Member%20Type%20Class.cpp
+ *      GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp10/Prob_10.13_Main_Member%20Type.cpp
  *
  *      Purpose:
  *
