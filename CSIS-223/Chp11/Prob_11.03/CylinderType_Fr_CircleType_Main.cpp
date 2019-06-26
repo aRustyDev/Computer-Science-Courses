@@ -1,4 +1,4 @@
-/*      Title: CylinderType From CircleType | Problem 11.04
+/*      Title: CylinderType From CircleType | Problem 11.03
  *      Author: Adam Smith | RedGrinGrumbler
  *
  *              ::Compiler Info::
@@ -11,7 +11,7 @@
  *          Target: x86_64-apple-darwin18.6.0
  *          Thread model: posix
  *
- *      GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp11/Prob_11.04
+ *      GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp11/Prob_11.03
  *
  *      Purpose: Inherit the Features and Methods of a Cirlce to a Cylinder
  *
