@@ -1,4 +1,4 @@
-/*      Title: CircleType.h | Problem 11.04
+/*      Title: CircleType.h | Problem 11.03
  *      Author: Adam Smith | RedGrinGrumbler
  *
  *              ::Compiler Info::
@@ -11,15 +11,15 @@
  *          Target: x86_64-apple-darwin18.6.0
  *          Thread model: posix
  *
- *      GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp11/Prob_11.04
+ *      GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp11/Prob_11.03
  *
  *      Purpose: Define the Class for a CirlceType
  *
  *      Pulled directly from DS Malik's, C++ Programming from Problem Analysis to Program Design
  */
 
-#ifndef PROB11_04_CYLINDERTYPE_FR_CIRCLETYPE_CIRCLETYPE_H
-#define PROB11_04_CYLINDERTYPE_FR_CIRCLETYPE_CIRCLETYPE_H
+#ifndef PROB11_03_CYLINDERTYPE_FR_CIRCLETYPE_CIRCLETYPE_H
+#define PROB11_03_CYLINDERTYPE_FR_CIRCLETYPE_CIRCLETYPE_H
 
 class circleType{
     public:
@@ -99,4 +99,4 @@ circleType::circleType(double r){
 }
 
 
-#endif //PROB11_04_CYLINDERTYPE_FR_CIRCLETYPE_CIRCLETYPE_H
+#endif //PROB11_03_CYLINDERTYPE_FR_CIRCLETYPE_CIRCLETYPE_H
