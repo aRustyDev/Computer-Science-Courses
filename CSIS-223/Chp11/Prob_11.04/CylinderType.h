@@ -11,7 +11,7 @@
  *          Target: x86_64-apple-darwin18.6.0
  *          Thread model: posix
  *
- *      GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp11
+ *      GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp11/Prob_11.04
  *
  *      Purpose: Define the Class for a CylinderType
  *
