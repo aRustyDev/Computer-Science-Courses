@@ -1,6 +1,23 @@
-//
-// Created by Adam Smith on 2019-07-03.
-//
+
+/*      Title: CircleType.h | Problem 12.04
+ *      Author: Adam Smith | RedGrinGrumbler
+ *
+ *              ::Compiler Info::
+ *      CMD: cpp --version
+ *          Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+ *          Target: x86_64-apple-darwin18.6.0
+ *          Thread model: posix
+ *      CMD: gcc --version
+ *          Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+ *          Target: x86_64-apple-darwin18.6.0
+ *          Thread model: posix
+ *
+ *      GitHub: https://github.com/RedGrinGrumbler/Computer-Science-Courses/blob/master/CSIS-223/Chp12/Prob_12.04
+ *
+ *      Purpose: Define the Class for largeIntegers, so as to handle operations on numbers that exceed the limit of 
+ *                  Long, Double, Float, or Int.
+ *
+ */
 
 #ifndef PROB12_02_LARGEINTEGERS_H
 #define PROB12_02_LARGEINTEGERS_H
