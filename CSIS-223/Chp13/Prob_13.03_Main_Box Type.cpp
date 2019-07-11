@@ -22,6 +22,28 @@
 
 int main()
 {
-    std::cout<<"Hello, World!"<<std::endl;
+    boxType box1 = boxType(3,4,5);
+    boxType box2 = boxType(4,3,5);
+
+    box1.print();
+    cout << box1.volume();
+    box2.print();
+    cout << box2.volume();
+
+    boxType box3 = box1 + box2;
+
+    box3.print();
+    cout << box3.volume();
+
+    cout << (box1 == box2);
+    cout << (box1 + box2 == box3);
+
+    box2.doubleDimensions();
+
+    cout << (box2 > box3);
+    
+    box2.print();
+    cout << box2.volume();
+
     return 0;
 }
