@@ -52,6 +52,12 @@ public:
     void checkSS(int sec);
 };
 
+timeFormat::timeFormat () {
+    setHH(0);
+    setMM(0);
+    setSS(0);
+}
+
 int timeFormat::setHH(int HH){
     this->hour = HH;
 }
